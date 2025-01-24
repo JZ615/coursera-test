@@ -5,12 +5,11 @@
   box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  padding: 20px;
   background-color: #f9f9f9;
+  padding: 20px;
 }
 
 h1 {
@@ -23,11 +22,14 @@ h1 {
 .menu-section {
   border: 1px solid black;
   padding: 20px;
-  margin: 10px 0;
+  margin: 10px;
   background-color: #e3e3e3;
   position: relative;
+  float: left;
+  width: calc(33.333% - 20px); /* Each section takes up one-third of the width with spacing */
 }
 
+/* Section Title Styling */
 .section-title {
   position: absolute;
   top: 10px;
@@ -50,9 +52,9 @@ h1 {
   background-color: #ffcc66;
 }
 
-/* Responsive Design */
+/* Responsive Layout */
 
-/* Desktop View (992px and above) */
+/* Desktop View (≥ 992px) */
 @media (min-width: 992px) {
   main {
     display: flex;
@@ -60,11 +62,11 @@ h1 {
   }
 
   .menu-section {
-    width: 30%;
+    width: calc(33.333% - 20px); /* Ensure even spacing */
   }
 }
 
-/* Tablet View (768px to 991px) */
+/* Tablet View (768px–991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   main {
     display: flex;
@@ -72,17 +74,22 @@ h1 {
   }
 
   .menu-section {
-    width: 48%;
-    margin-bottom: 10px;
+    width: calc(50% - 20px); /* Two sections per row */
   }
 
   .menu-section:nth-child(3) {
-    width: 100%;
+    width: 100%; /* Third section spans full width */
   }
 }
 
-/* Mobile View (767px and below) */
+/* Mobile View (≤ 767px) */
 @media (max-width: 767px) {
+  main {
+    display: block;
+  }
+
   .menu-section {
     width: 100%;
+    margin: 10px 0;
   }
+}
