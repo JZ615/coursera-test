@@ -21,23 +21,24 @@ h1 {
 /* Section Styling */
 .menu-section {
   border: 1px solid black;
-  padding: 40px 20px 20px; /* Increased top padding to avoid overlap with title */
+  padding: 50px 20px 20px; /* Increased top padding to make space for the title */
   margin: 10px;
   background-color: #e3e3e3;
-  position: relative; /* Makes .section-title relative to this box */
-  float: left; /* Allows sections to sit side by side in desktop view */
-  width: calc(33.333% - 20px); /* Ensures three sections fit on one row */
+  position: relative; /* Allows .section-title to be positioned relative to this */
+  float: left;
+  width: calc(33.333% - 20px); /* Each section takes one-third of the width with spacing */
 }
 
 /* Title Styling */
 .section-title {
-  position: absolute; /* Positions the title within its parent .menu-section */
-  top: 10px; /* Aligns title 10px from the top */
-  right: 10px; /* Aligns title 10px from the right */
-  background-color: #ffcccb; /* Title background color */
-  padding: 5px 10px; /* Adds padding inside the title box */
-  border: 1px solid black; /* Border around the title */
-  font-weight: bold; /* Bold font for title */
+  position: absolute;
+  top: 10px; /* 10px from the top edge of the section */
+  right: 10px; /* 10px from the right edge of the section */
+  background-color: #ffcccb;
+  padding: 5px 10px; /* Spacing inside the title box */
+  border: 1px solid black; /* Adds a border around the title */
+  font-weight: bold; /* Bold text for the title */
+  font-size: 1rem; /* Adjusted font size for better readability */
 }
 
 .chicken .section-title {
@@ -52,9 +53,9 @@ h1 {
   background-color: #ffcc66;
 }
 
-/* Responsive Layout */
+/* Responsive Design */
 
-/* Desktop View (≥ 992px) */
+/* Desktop View (≥ 992px): Three sections side-by-side */
 @media (min-width: 992px) {
   main {
     display: flex;
@@ -62,11 +63,11 @@ h1 {
   }
 
   .menu-section {
-    width: calc(33.333% - 20px); /* Ensure even spacing */
+    width: calc(33.333% - 20px); /* Ensures three sections fit in one row */
   }
 }
 
-/* Tablet View (768px–991px) */
+/* Tablet View (768px–991px): Two sections per row, third section full width */
 @media (min-width: 768px) and (max-width: 991px) {
   main {
     display: flex;
@@ -82,14 +83,14 @@ h1 {
   }
 }
 
-/* Mobile View (≤ 767px) */
+/* Mobile View (≤ 767px): Sections stack vertically */
 @media (max-width: 767px) {
   main {
     display: block;
   }
 
   .menu-section {
-    width: 100%;
+    width: 100%; /* Sections take up full width */
     margin: 10px 0;
   }
 }
