@@ -20,13 +20,16 @@ h1 {
 
 /* Section Styling */
 .menu-section {
-  border: 1px solid black;
-  padding: padding: 40px 20px 20px;
-  margin: 10px;
-  background-color: #e3e3e3;
-  position: relative;
-  float: left;
-  width: calc(33.333% - 20px); /* Each section takes up one-third of the width with spacing */
+.section-title {
+  position: absolute; /* Position it relative to the parent .menu-section */
+  top: 10px; /* Distance from the top of the section */
+  right: 10px; /* Distance from the right edge of the section */
+  background-color: #ffcccb; /* Background color for the title */
+  padding: 5px 10px; /* Adds some padding inside the title box */
+  border: 1px solid black; /* Adds a border around the title */
+  font-weight: bold; /* Makes the text bold */
+}
+
 }
 
 /* Section Title Styling */
