@@ -31,14 +31,19 @@ h1 {
 
 /* Title Styling */
 .section-title {
-  position: absolute;
-  top: 1px; /* 10px from the top edge of the section */
-  right: 1px; /* 10px from the right edge of the section */
-  background-color: #ffcccb;
-  padding: 5px 10px; /* Spacing inside the title box */
+  position: absolute; /* Position relative to the parent .menu-section */
+  top: 10px; /* Distance from the top of the section */
+  right: 10px; /* Distance from the right edge of the section */
+  background-color: #ffcccb; /* Title background color */
+  padding: 5px 10px; /* Padding inside the title box */
   border: 1px solid black; /* Adds a border around the title */
-  font-weight: bold; /* Bold text for the title */
-  font-size: 1rem; /* Adjusted font size for better readability */
+  font-weight: bold; /* Makes the text bold */
+  width: 100px; /* Fixed width for all title boxes */
+  height: 40px; /* Fixed height for all title boxes */
+  display: flex; /* Enables centering */
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  text-align: center; /* Ensures text is aligned */
 }
 
 .chicken .section-title {
