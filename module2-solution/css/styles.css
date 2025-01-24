@@ -20,27 +20,24 @@ h1 {
 
 /* Section Styling */
 .menu-section {
-.section-title {
-  position: absolute; /* Position it relative to the parent .menu-section */
-  top: 10px; /* Distance from the top of the section */
-  right: 10px; /* Distance from the right edge of the section */
-  background-color: #ffcccb; /* Background color for the title */
-  padding: 5px 10px; /* Adds some padding inside the title box */
-  border: 1px solid black; /* Adds a border around the title */
-  font-weight: bold; /* Makes the text bold */
-}
-
-}
-
-/* Section Title Styling */
-.section-title {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ffcccb;
-  padding: 5px 10px;
   border: 1px solid black;
-  font-weight: bold;
+  padding: 40px 20px 20px; /* Increased top padding to avoid overlap with title */
+  margin: 10px;
+  background-color: #e3e3e3;
+  position: relative; /* Makes .section-title relative to this box */
+  float: left; /* Allows sections to sit side by side in desktop view */
+  width: calc(33.333% - 20px); /* Ensures three sections fit on one row */
+}
+
+/* Title Styling */
+.section-title {
+  position: absolute; /* Positions the title within its parent .menu-section */
+  top: 10px; /* Aligns title 10px from the top */
+  right: 10px; /* Aligns title 10px from the right */
+  background-color: #ffcccb; /* Title background color */
+  padding: 5px 10px; /* Adds padding inside the title box */
+  border: 1px solid black; /* Border around the title */
+  font-weight: bold; /* Bold font for title */
 }
 
 .chicken .section-title {
