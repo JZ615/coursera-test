@@ -32,8 +32,8 @@ h1 {
 /* Title Styling */
 .section-title {
   position: absolute;
-  top: 0px; /* 10px from the top edge of the section */
-  right: 0px; /* 10px from the right edge of the section */
+  top: 1px; /* 10px from the top edge of the section */
+  right: 1px; /* 10px from the right edge of the section */
   background-color: #ffcccb;
   padding: 5px 10px; /* Spacing inside the title box */
   border: 1px solid black; /* Adds a border around the title */
