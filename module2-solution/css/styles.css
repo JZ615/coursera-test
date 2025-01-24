@@ -27,6 +27,7 @@ h1 {
   position: relative; /* Allows .section-title to be positioned relative to this */
   float: left;
   width: calc(33.333% - 20px); /* Each section takes one-third of the width with spacing */
+  margin: 0;
 }
 
 /* Title Styling */
