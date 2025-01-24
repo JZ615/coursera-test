@@ -21,30 +21,30 @@ h1 {
 /* Section Styling */
 .menu-section {
   border: 1px solid black;
-  padding: 50px 20px 20px; /* Increased top padding to make space for the title */
+  padding: 50px 20px 20px; 
   margin: 10px;
   background-color: #e3e3e3;
-  position: relative; /* Allows .section-title to be positioned relative to this */
+  position: relative; 
   float: left;
-  width: calc(33.333% - 20px); /* Each section takes one-third of the width with spacing */
+  width: calc(33.333% - 20px); 
   margin: 0;
 }
 
 /* Title Styling */
 .section-title {
-  position: absolute; /* Position relative to the parent .menu-section */
-  top: 0px; /* Distance from the top of the section */
-  right: 0px; /* Distance from the right edge of the section */
-  background-color: #ffcccb; /* Title background color */
-  padding: 5px 10px; /* Padding inside the title box */
-  border: 1px solid black; /* Adds a border around the title */
-  font-weight: bold; /* Makes the text bold */
-  width: 100px; /* Fixed width for all title boxes */
-  height: 40px; /* Fixed height for all title boxes */
-  display: flex; /* Enables centering */
-  align-items: center; /* Centers text vertically */
-  justify-content: center; /* Centers text horizontally */
-  text-align: center; /* Ensures text is aligned */
+  position: absolute; 
+  top: 0px; 
+  right: 0px; 
+  background-color: #ffcccb; 
+  padding: 5px 10px; 
+  border: 1px solid black; 
+  font-weight: bold; 
+  width: 100px; 
+  height: 40px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
 }
 
 .chicken .section-title {
