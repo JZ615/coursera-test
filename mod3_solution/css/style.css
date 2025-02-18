@@ -3,11 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
 }
 
 /* Navbar */
@@ -15,8 +10,6 @@ body {
     background-color: #666;
     border: none;
     width: 100%;
-    position: absolute;
-    top: 0;
 }
 
 /* Navbar Brand */
@@ -36,7 +29,6 @@ body {
     background-color: white;
 }
 
-/* Navbar Menu */
 .navbar-nav {
     background-color: #666;
 }
@@ -55,27 +47,24 @@ h1 {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin-top: 70px; /* Ensures spacing below navbar */
+    margin-top: 20px;
 }
 
-/* Centered Content Section (Gray Box) */
+/* ✅ Centered Gray Content Box */
 .content-section {
     background-color: #ccc;
     padding: 20px;
     border-radius: 5px;
-    max-width: 800px; /* Ensures content doesn't stretch too wide */
-    width: 80%; /* Keeps width dynamic */
+    max-width: 800px; /* Ensures it doesn’t stretch too wide */
+    width: 80%; /* Keeps it responsive */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers text vertically */
-    align-items: center; /* Centers text horizontally */
+    margin: 20px auto; /* ✅ Centers the box horizontally */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .content-section {
-        width: 90%; /* Ensures it fits on small screens */
+        width: 90%; /* Ensures it fits well on small screens */
         padding: 15px;
     }
 
