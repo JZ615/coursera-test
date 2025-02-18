@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white; /* ✅ Ensures the whole background is white */
 }
 
 /* Navbar */
@@ -51,33 +52,41 @@ h1 {
     margin-top: 20px;
 }
 
-/* ✅ Wider Tall Section */
+/* ✅ Tall Section with White Background */
 .tall-section {
-    background-color: #f4f4f4; /* Light gray background */
-    height: 1000px; /* Ensures scrolling */
+    background-color: white; /* ✅ Keeps the section background white */
+    height: 1000px; /* ✅ Ensures scrolling */
     display: flex;
     justify-content: center; /* Centers content horizontally */
     align-items: flex-start; /* Align content towards top */
     padding-top: 50px; /* Adds spacing from the top */
-    width: 100%; /* Ensures it takes up full width */
+    width: 100%; /* ✅ Full width */
 }
 
 /* ✅ Wider Gray Content Box */
 .content-section {
     background-color: #ccc;
-    padding: 20px;
+    padding: 30px; /* ✅ More padding for better spacing */
     border-radius: 5px;
-    max-width: 1100px; /* 🔥 Increased from 800px to 1100px */
-    width: 90%; /* 🔥 Increased from 60% to 90% */
+    max-width: 1300px; /* 🔥 Increased from 1100px to 1300px */
+    width: 95%; /* 🔥 Increased from 90% to 95% */
     text-align: center;
     margin: 0 auto; /* ✅ Ensures horizontal centering */
 }
 
 /* Responsive Adjustments */
+@media (max-width: 991px) {
+    .content-section {
+        max-width: 1000px; /* ✅ Adjust width on medium screens */
+        width: 90%;
+    }
+}
+
 @media (max-width: 767px) {
     .content-section {
-        width: 95%; /* Ensures it fits well on smaller screens */
-        padding: 15px;
+        max-width: none;
+        width: 95%; /* ✅ Ensures it fits well on smaller screens */
+        padding: 20px;
     }
 
     /* Navbar */
