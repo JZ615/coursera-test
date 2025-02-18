@@ -1,61 +1,88 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: white; /* White background */
-    color: black; /* Black text */
-    padding-top: 50px; /* Space for navbar */
     margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #ccc; /* Light gray navbar */
+    background-color: #666;
     border: none;
 }
 
-/* Mobile Menu */
-.navbar-collapse {
-    background-color: #ccc; /* Light gray background for dropdown */
+.navbar-brand {
+    font-size: 24px;
+    color: white !important;
+    font-weight: bold;
 }
 
-.navbar-nav > li > a {
-    color: black; /* Black text for menu items */
+.navbar-toggle {
+    border: none;
+    background: none;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-nav {
+    background-color: #666;
+}
+
+/* Menu Items for Mobile View */
+.navbar-nav.visible-xs {
+    text-align: center;
+}
+
+.navbar-nav.visible-xs li {
+    border-bottom: 1px solid #999;
+}
+
+.navbar-nav.visible-xs li a {
+    color: white !important;
+    padding: 10px 0;
+    display: block;
+}
+
+.navbar-nav.visible-xs li:hover {
+    background-color: #444;
 }
 
 /* Page Heading */
 h1 {
-    text-align: center;
-    font-size: 2em;
+    font-size: 32px;
+    font-weight: bold;
     margin-top: 20px;
 }
 
-/* Centered Content Section (Shaded Gray Box) */
+/* Content Section */
 .content-section {
-    background-color: #f4f4f4; /* Light gray background for contrast */
+    background-color: #ccc;
     padding: 20px;
-    max-width: 900px; /* Set max width */
-    margin: 20px auto; /* Centers the section */
+    margin: 10px;
     border-radius: 5px;
-    text-align: center; /* Centers text inside */
 }
 
-/* Ensure all text remains black */
-.content-section h2 {
-    color: black;
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+/* Responsive Styles */
+@media (max-width: 767px) {
+    /* Navbar */
+    .navbar-header {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-.content-section p {
-    color: black;
-    font-size: 1.2em;
-    line-height: 1.5;
-}
+    /* Hamburger Icon */
+    .navbar-toggle {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
 
-/* Responsive Adjustments */
-@media (max-width: 767px) {  /* Mobile View */
+    /* Adjust content width */
     .content-section {
-        max-width: 100%; /* Full width on small screens */
+        margin: 0 10px;
+        text-align: center;
     }
 }
