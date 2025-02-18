@@ -1,53 +1,61 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: white; /* White background */
+    color: black; /* Black text */
     padding-top: 50px; /* Space for navbar */
-    background-color: #ccc; /* Light gray background */
+    margin: 0;
 }
+
 /* Navbar */
 .navbar {
-    background-color: #ccc; /* Light gray background */
-    margin-bottom: 0;
+    background-color: #ccc; /* Light gray navbar */
     border: none;
 }
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-}
-/* Mobile Menu Button */
-.navbar-toggle {
-    border: none;
-    background: none !important;
-}
-.icon-bar {
-    background-color: black;
-}
-/* Mobile Dropdown Menu */
+
+/* Mobile Menu */
 .navbar-collapse {
-    background-color: #ccc; /* Light gray background */
+    background-color: #ccc; /* Light gray background for dropdown */
 }
+
+.navbar-nav > li > a {
+    color: black; /* Black text for menu items */
+}
+
 /* Page Heading */
 h1 {
-    margin-top: 20px;
-    font-size: 2em;
     text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
 }
-/* Content Section */
+
+/* Centered Content Section (Shaded Gray Box) */
 .content-section {
-    background-color: #aaa; /* Medium gray background */
+    background-color: #f4f4f4; /* Light gray background for contrast */
     padding: 20px;
-    max-width: 900px; /* Centers the section */
-    margin: 20px auto; /* Center align */
+    max-width: 900px; /* Set max width */
+    margin: 20px auto; /* Centers the section */
     border-radius: 5px;
+    text-align: center; /* Centers text inside */
 }
-/* Responsive Grid */
-@media (min-width: 768px) {  /* Tablets and Desktops */
-    .container {
-        width: 80%;
-        margin: auto;
-    }
+
+/* Ensure all text remains black */
+.content-section h2 {
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.content-section p {
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 767px) {  /* Mobile View */
     .content-section {
-        max-width: 100%; /* Full width */
+        max-width: 100%; /* Full width on small screens */
     }
+}
