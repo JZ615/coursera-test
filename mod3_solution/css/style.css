@@ -47,23 +47,21 @@ h1 {
     text-align: center;
 }
 
-/* Centered Content Section */
+/* Content Section */
 .content-section {
     background-color: #ccc;
     padding: 20px;
     margin: 20px auto; /* Centers the box */
     border-radius: 5px;
-    max-width: 800px; /* Ensures a max width */
-    text-align: center; /* Centers the text inside */
+    max-width: 800px; /* Limits the maximum width */
+    text-align: center;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .content-section {
-        margin: 20px auto; /* Keeps it centered */
+        margin: 20px 10px; /* Ensures equal spacing on both sides */
         padding: 15px;
-        width: 90%; /* Makes sure it’s not too wide */
-        max-width: none; /* Allows flexibility on smaller screens */
     }
 
     /* Navbar */
