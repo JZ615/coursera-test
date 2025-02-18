@@ -1,26 +1,22 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* ✅ Ensures full-page white background */
+    background-color: white;
 }
 
-/* Navbar */
 .navbar {
     background-color: #666;
     border: none;
     width: 100%;
 }
 
-/* Navbar Brand */
 .navbar-brand {
     font-size: 24px;
     color: white !important;
     font-weight: bold;
 }
 
-/* Navbar Toggle */
 .navbar-toggle {
     border: none;
     background: none;
@@ -30,7 +26,6 @@ body {
     background-color: white;
 }
 
-/* Navbar Menu */
 .navbar-nav {
     background-color: #666;
 }
@@ -44,20 +39,18 @@ body {
     background-color: #444;
 }
 
-/* ✅ Properly Centered "Our Menu" */
 h1 {
-    font-size: 36px; /* ✅ Matches mockup */
+    font-size: 36px;
     font-weight: bold;
-    text-align: center; /* ✅ Ensures Bootstrap centering */
+    text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
     line-height: 1.5;
 }
 
-/* ✅ Scrollable Tall Section */
 .tall-section {
-    background-color: white; /* ✅ White background */
-    height: 1000px; /* ✅ Ensures scrolling */
+    background-color: white;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -65,32 +58,28 @@ h1 {
     width: 100%;
 }
 
-/* ✅ Wider Gray Content Box */
 .content-section {
     background-color: #ccc;
     padding: 20px 30px;
     border-radius: 5px;
-    max-width: 1300px; /* ✅ Wider than before */
+    max-width: 1300px;
     width: 95%;
     text-align: center;
     margin: 0 auto;
 }
 
-/* ✅ Adjusted "Chicken" Spacing */
 .content-section h2 {
-    font-size: 24px; /* ✅ Matches mockup */
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 0; /* ✅ Moves "Chicken" to the top of the gray box */
-    margin-bottom: 10px; /* ✅ Ensures proper spacing before paragraph */
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-/* ✅ Adjusted Paragraph Spacing */
 .content-section p {
-    margin-top: 0; /* ✅ Removes extra space */
-    text-align: justify; /* ✅ Keeps text aligned */
+    margin-top: 0;
+    text-align: center;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 991px) {
     .content-section {
         max-width: 1000px;
@@ -100,7 +89,7 @@ h1 {
 
 @media (max-width: 767px) {
     h1 {
-        font-size: 32px; /* ✅ Adjusted size for mobile */
+        font-size: 32px;
         margin-top: 40px;
         margin-bottom: 30px;
     }
@@ -112,18 +101,16 @@ h1 {
     }
 
     .content-section h2 {
-        font-size: 22px; /* ✅ Adjusted for smaller screens */
+        font-size: 22px;
         margin-bottom: 8px;
     }
 
-    /* Navbar */
     .navbar-header {
         width: 100%;
         text-align: center;
         padding: 10px 0;
     }
 
-    /* Navbar Toggle */
     .navbar-toggle {
         position: absolute;
         right: 10px;
