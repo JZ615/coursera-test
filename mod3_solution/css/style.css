@@ -9,17 +9,14 @@ body {
 .navbar {
     background-color: #666;
     border: none;
-    width: 100%;
 }
 
-/* Navbar Brand */
 .navbar-brand {
     font-size: 24px;
     color: white !important;
     font-weight: bold;
 }
 
-/* Navbar Toggle */
 .navbar-toggle {
     border: none;
     background: none;
@@ -29,7 +26,6 @@ body {
     background-color: white;
 }
 
-/* Navbar Menu */
 .navbar-nav {
     background-color: #666;
 }
@@ -47,25 +43,24 @@ body {
 h1 {
     font-size: 32px;
     font-weight: bold;
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 
-/* ✅ Centered Gray Content Box */
+/* Content Section */
 .content-section {
     background-color: #ccc;
     padding: 20px;
+    margin: 20px auto; /* Centers the box */
     border-radius: 5px;
-    max-width: 800px; /* Ensures the box does not stretch too wide */
-    width: 80%; /* Keeps it responsive */
+    max-width: 800px; /* Limits the maximum width */
     text-align: center;
-    margin: 20px auto; /* ✅ Ensures horizontal centering */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .content-section {
-        width: 90%; /* Ensures it fits well on smaller screens */
+        margin: 20px 10px; /* Ensures equal spacing on both sides */
         padding: 15px;
     }
 
@@ -76,7 +71,7 @@ h1 {
         padding: 10px 0;
     }
 
-    /* Navbar Toggle */
+    /* Hamburger Icon */
     .navbar-toggle {
         position: absolute;
         right: 10px;
