@@ -51,14 +51,15 @@ h1 {
     margin-top: 20px;
 }
 
-/* ✅ Really Tall Section */
+/* ✅ Really Tall Section (1000px height for scrolling) */
 .tall-section {
-    background-color: #eee; /* Light gray background */
-    height: 1000px; /* Ensures scrolling */
+    background-color: #f4f4f4; /* Light gray background to distinguish */
+    height: 1000px; /* Forces scrolling */
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; /* Center horizontally */
     align-items: flex-start; /* Align content towards top */
-    padding-top: 50px; /* Adds spacing from top */
+    padding-top: 50px; /* Adds spacing from the top */
+    width: 100%; /* Ensures it takes up full width */
 }
 
 /* ✅ Centered Gray Content Box */
@@ -66,8 +67,8 @@ h1 {
     background-color: #ccc;
     padding: 20px;
     border-radius: 5px;
-    max-width: 800px; /* Ensures a reasonable width */
-    width: 60%; /* Keeps it balanced and not too wide */
+    max-width: 800px; /* Ensures it doesn’t stretch too wide */
+    width: 60%; /* Keeps it balanced */
     text-align: center;
     margin: 0 auto; /* ✅ Ensures horizontal centering */
 }
