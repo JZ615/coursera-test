@@ -9,7 +9,6 @@ body {
 .navbar {
     background-color: #666;
     border: none;
-    width: 100%;
 }
 
 .navbar-brand {
@@ -48,24 +47,21 @@ h1 {
     text-align: center;
 }
 
-/* Gray Content Box (Chicken Section) */
+/* Content Section */
 .content-section {
     background-color: #ccc;
     padding: 20px;
-    margin: 20px auto; /* Centers the box horizontally */
+    margin: 20px auto; /* Centers the box */
     border-radius: 5px;
-    max-width: 800px; /* Limits width on large screens */
-    text-align: center; /* Ensures text is centered */
-    width: 80%; /* Makes sure it's not too wide on mobile */
+    max-width: 800px; /* Limits the maximum width */
+    text-align: center;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .content-section {
-        margin: 20px auto; /* Keeps it centered */
+        margin: 20px 10px; /* Ensures equal spacing on both sides */
         padding: 15px;
-        width: 90%; /* Ensures responsiveness */
-        max-width: none; /* Allows flexibility */
     }
 
     /* Navbar */
@@ -76,4 +72,9 @@ h1 {
     }
 
     /* Hamburger Icon */
-    .navbar-toggle
+    .navbar-toggle {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}
