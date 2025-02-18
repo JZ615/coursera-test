@@ -3,12 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the content takes the full height of the viewport */
 }
 
 /* Navbar */
 .navbar {
     background-color: #666;
     border: none;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -43,25 +48,30 @@ body {
 h1 {
     font-size: 32px;
     font-weight: bold;
-    margin-top: 20px;
     text-align: center;
 }
 
-/* Content Section */
+/* Content Section (Gray Box) */
 .content-section {
     background-color: #ccc;
     padding: 20px;
-    margin: 20px auto; /* Centers the box */
+    margin: 0 auto; /* Centers horizontally */
     border-radius: 5px;
     max-width: 800px; /* Limits the maximum width */
     text-align: center;
+    width: 90%; /* Ensures it is centered and responsive */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .content-section {
-        margin: 20px 10px; /* Ensures equal spacing on both sides */
+        margin: 20px auto; /* Keeps it centered */
         padding: 15px;
+        width: 90%; /* Ensures responsiveness */
+        max-width: none; /* Prevents unnecessary max width on small screens */
     }
 
     /* Navbar */
