@@ -1,21 +1,16 @@
-/* General styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    padding-top: 50px; /* Adjust for navbar space */
+    padding-top: 50px; /* Space for the navbar */
 }
 
 /* Navbar */
 .navbar {
-    margin-bottom: 0;
     background-color: #ccc;
+    margin-bottom: 0;
 }
 
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Mobile Menu */
+/* Mobile Menu Styles */
 .navbar-toggle {
     border: none;
     background: none !important;
@@ -31,15 +26,14 @@ h1 {
     font-size: 2em;
 }
 
-/* Content Sections */
-.menu-section {
+/* Content Section */
+.content-section {
     background-color: #aaa;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
+    padding: 30px;
+    height: 1000px; /* Ensuring the section is really tall */
 }
 
-.menu-section h2 {
+.content-section h2 {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
