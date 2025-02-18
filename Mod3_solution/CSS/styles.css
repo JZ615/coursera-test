@@ -1,36 +1,36 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    padding-top: 50px; /* Space for the navbar */
+    padding-top: 50px; /* Space for navbar */
+    background-color: #f4f4f4; /* Light gray background */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #ccc;
+    background-color: #ccc; /* Light gray background */
     margin-bottom: 0;
-}
-
-/* Mobile Menu Styles */
-.navbar-toggle {
     border: none;
-    background: none !important;
 }
 
-.icon-bar {
-    background-color: black;
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Page Heading */
 h1 {
-    margin: 30px 0;
+    margin-top: 20px;
     font-size: 2em;
+    text-align: center;
 }
 
 /* Content Section */
 .content-section {
-    background-color: #aaa;
-    padding: 30px;
-    height: 1000px; /* Ensuring the section is really tall */
+    background-color: #aaa; /* Gray background */
+    padding: 20px;
+    max-width: 900px; /* Centers the section */
+    margin: 20px auto; /* Center align */
+    border-radius: 5px;
 }
 
 .content-section h2 {
@@ -39,3 +39,14 @@ h1 {
     text-align: center;
 }
 
+/* Responsive Grid */
+@media (min-width: 768px) {  /* Applies to Tablets and Desktops */
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {  /* Mobile View */
+    .content-section {
+        max-width: 100%; /* Full
