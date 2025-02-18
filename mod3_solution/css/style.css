@@ -30,22 +30,12 @@ body {
     background-color: #666;
 }
 
-/* Menu Items for Mobile View */
-.navbar-nav.visible-xs {
-    text-align: center;
-}
-
-.navbar-nav.visible-xs li {
-    border-bottom: 1px solid #999;
-}
-
-.navbar-nav.visible-xs li a {
+.navbar-nav > li > a {
     color: white !important;
-    padding: 10px 0;
-    display: block;
+    padding: 10px 15px;
 }
 
-.navbar-nav.visible-xs li:hover {
+.navbar-nav > li > a:hover {
     background-color: #444;
 }
 
@@ -54,18 +44,25 @@ h1 {
     font-size: 32px;
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
 }
 
 /* Content Section */
 .content-section {
     background-color: #ccc;
     padding: 20px;
-    margin: 10px;
+    margin: 20px auto; /* Center the box */
     border-radius: 5px;
+    max-width: 800px; /* Ensures a max width */
 }
 
-/* Responsive Styles */
+/* Responsive Adjustments */
 @media (max-width: 767px) {
+    .content-section {
+        margin: 20px; /* Ensures equal spacing on both sides */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
     /* Navbar */
     .navbar-header {
         width: 100%;
@@ -78,11 +75,5 @@ h1 {
         position: absolute;
         right: 10px;
         top: 10px;
-    }
-
-    /* Adjust content width */
-    .content-section {
-        margin: 0 10px;
-        text-align: center;
     }
 }
