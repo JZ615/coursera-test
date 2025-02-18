@@ -52,6 +52,17 @@ h1 {
 }
 
 /* Content Section (Gray Box) */
+
+.content-section {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 20px auto; /* Ensures it's centered */
+    border-radius: 5px;
+    max-width: 800px;
+    text-align: center;
+    width: 80%; /* Ensures balanced width */
+}
+
 .content-section {
     background-color: #ccc;
     padding: 20px;
