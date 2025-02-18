@@ -29,6 +29,7 @@ body {
     background-color: white;
 }
 
+/* Navbar Menu */
 .navbar-nav {
     background-color: #666;
 }
@@ -55,16 +56,16 @@ h1 {
     background-color: #ccc;
     padding: 20px;
     border-radius: 5px;
-    max-width: 800px; /* Ensures it doesn’t stretch too wide */
+    max-width: 800px; /* Ensures the box does not stretch too wide */
     width: 80%; /* Keeps it responsive */
     text-align: center;
-    margin: 20px auto; /* ✅ Centers the box horizontally */
+    margin: 20px auto; /* ✅ Ensures horizontal centering */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .content-section {
-        width: 90%; /* Ensures it fits well on small screens */
+        width: 90%; /* Ensures it fits well on smaller screens */
         padding: 15px;
     }
 
