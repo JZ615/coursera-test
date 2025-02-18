@@ -51,13 +51,14 @@ h1 {
     margin-top: 20px;
 }
 
-/* ✅ Really Tall Section (Full-Width with Bootstrap Grid) */
+/* ✅ Really Tall Section */
 .tall-section {
-    background-color: #eee; /* Light gray background to distinguish from other content */
-    height: 1000px; /* Forces scrolling */
+    background-color: #eee; /* Light gray background */
+    height: 1000px; /* Ensures scrolling */
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align content towards top */
+    padding-top: 50px; /* Adds spacing from top */
 }
 
 /* ✅ Centered Gray Content Box */
@@ -65,10 +66,10 @@ h1 {
     background-color: #ccc;
     padding: 20px;
     border-radius: 5px;
-    max-width: 800px; /* Ensures the box does not stretch too wide */
-    width: 50%; /* Keeps it balanced */
+    max-width: 800px; /* Ensures a reasonable width */
+    width: 60%; /* Keeps it balanced and not too wide */
     text-align: center;
-    margin: 20px auto; /* ✅ Ensures horizontal centering */
+    margin: 0 auto; /* ✅ Ensures horizontal centering */
 }
 
 /* Responsive Adjustments */
