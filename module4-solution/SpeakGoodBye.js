@@ -1,6 +1,6 @@
 (function () {
   
-var speakword = "Good Bye";
+var speakWord = "Good Bye";
 
 var byeSpeaker = {};
 
