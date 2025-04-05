@@ -2,12 +2,12 @@
 
   var speakWord = "Hello";
 
-  var hellospeaker = {};
+  var helloSpeaker = {};
 
-  hellospeaker.speak = function (name) {
+  helloSpeaker.speak = function (name) {
     console.log(speakWord + " " + name);
   }
 
-  window.hellospeaker = hellospeaker;
+  window.helloSpeaker = helloSpeaker;
 
 })();
