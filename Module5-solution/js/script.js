@@ -304,3 +304,6 @@ function insertItemPortionName(html, portionPropName, portionValue) {
   html = insertProperty(html, portionPropName, portionValue);
   return html;
 }
+global.$dc = dc;
+
+})(window);
