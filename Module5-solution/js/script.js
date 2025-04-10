@@ -87,16 +87,15 @@ function buildAndShowHomeHTML(categories) {
       var homeHtmlToInsertIntoMainPage = insertProperty(
         homeHtml,
         "randomCategoryShortName",
-        "'" + chosenCategoryShortName + "'" // Quotes needed
+        "'" + chosenCategoryShortName + "'"  // <-- Add single quotes here
       );
 
       // STEP 4: Insert the produced HTML into the main page
-          insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
-  },
-  false); // Not JSON, so false here
+    },
+    false); // Not JSON, so false here
 }
-
 
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
