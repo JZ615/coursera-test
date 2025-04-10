@@ -127,30 +127,32 @@ dc.loadMenuItems = function (categoryShort) {
 };
 
 
-// Builds HTML for the categories page based on the data
-// from the server
-function buildAndShowCategoriesHTML (categories) {
-  // Load title snippet of categories page
-  $ajaxUtils.sendGetRequest(
-    categoriesTitleHtml,
-    function (categoriesTitleHtml) {
-      // Retrieve single category snippet
-      $ajaxUtils.sendGetRequest(
-        categoryHtml,
-        function (categoryHtml) {
-          // Switch CSS class active to menu button
-          switchMenuToActive();
+// Builds HTML for the home page based on categories array returned from the server.
+function buildAndShowHomeHTML(categories) {
 
-          var categoriesViewHtml =
-            buildCategoriesViewHtml(categories,
-                                    categoriesTitleHtml,
-                                    categoryHtml);
-          insertHtml("#main-content", categoriesViewHtml);
-        },
-        false);
+  // Load home snippet page
+  $ajaxUtils.sendGetRequest(
+    homeHtmlUrl,
+    function (homeHtml) {
+
+      // STEP 2: Choose a random category
+      var chosenCategory = chooseRandomCategory(categories);
+      var chosenCategoryShortName = chosenCategory.short_name;
+
+      // STEP 3: Substitute {{randomCategoryShortName}} in snippet
+      var homeHtmlToInsertIntoMainPage = insertProperty(
+        homeHtml,
+        "randomCategoryShortName",
+        "'" + chosenCategoryShortName + "'"  // <-- Add single quotes here
+      );
+
+      // STEP 4: Insert the produced HTML into the main page
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+
     },
-    false);
+    false); // Not JSON, so false here
 }
+
 
 
 // Using categories data and snippets html
