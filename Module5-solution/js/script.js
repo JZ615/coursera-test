@@ -91,12 +91,11 @@ function buildAndShowHomeHTML(categories) {
       );
 
       // STEP 4: Insert the produced HTML into the main page
-      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+          insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
-    },
-    false); // Not JSON, so false here
+  },
+  false); // Not JSON, so false here
 }
-
 
 
 // Given array of category objects, returns a random category object.
@@ -308,7 +307,7 @@ function insertItemPortionName(html,
   return html;
 }
 
-
+// Close IIFE function properly
 global.$dc = dc;
 
 })(window);
