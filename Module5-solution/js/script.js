@@ -292,25 +292,9 @@ function insertItemPrice(html,
   return html;
 }
 
-
 // Appends portion name in parens if it exists
-function insertItemPortionName(html,
-                               portionPropName,
-                               portionValue) {
+function insertItemPortionName(html, portionPropName, portionValue) {
   // If not specified, return original string
-  if (!portionValue) {
-    return insertProperty(html, portionPropName, "");
-  }
-
-  portionValue = "(" + portionValue + ")";
-  html = insertProperty(html, portionPropName, portionValue);
-    return html;
-}
-
-// Appends portion name in parens if it exists
-function insertItemPortionName(html,
-                               portionPropName,
-                               portionValue) {
   if (!portionValue) {
     return insertProperty(html, portionPropName, "");
   }
@@ -319,8 +303,3 @@ function insertItemPortionName(html,
   html = insertProperty(html, portionPropName, portionValue);
   return html;
 }
-
-// This closes the entire IIFE wrapper
-global.$dc = dc;
-
-})(window);
